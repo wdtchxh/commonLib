@@ -1,0 +1,17 @@
+PODS:
+  - commonLib (0.1.0)
+  - WebViewJavascriptBridge (5.0.5)
+
+DEPENDENCIES:
+  - commonLib (from `../`)
+  - WebViewJavascriptBridge (~> 5.0.5)
+
+EXTERNAL SOURCES:
+  commonLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  commonLib: 06aa9207068fc8914273812509e5b9c2ac7e0848
+  WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
+
+COCOAPODS: 0.39.0

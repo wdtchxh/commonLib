@@ -1,14 +1,13 @@
-use_frameworks!
+platform :ios, '7.0'
 
-target 'commonLib_Example' do
-  pod 'commonLib', :path => '../'
+source 'https://github.com/yanghl/seanspec.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
-  target 'commonLib_Tests' do
-    inherit! :search_paths
+target 'commonLib_Example', :exclusive => true do
+pod 'commonLib', :path => '../'
+pod 'WebViewJavascriptBridge', '~> 5.0.5'
 
-    pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
-  end
+    target 'commonLib_Tests' do
+    end
 end
+
