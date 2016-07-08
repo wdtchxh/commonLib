@@ -5,7 +5,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'commonLib_Example', :exclusive => true do
 pod 'commonLib', :path => '../'
-pod 'WebViewJavascriptBridge', '~> 5.0.5'
 
     target 'commonLib_Tests' do
     end

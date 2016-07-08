@@ -27,5 +27,13 @@
   "resources": [
     "commonLib/Classes/**/*.{xib,nib,plist,storyboard}",
     "commonLib/Assets/**/*.png"
-  ]
+  ],
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "JSONModel": [
+
+    ]
+  }
 }

@@ -20,7 +20,7 @@ s.frameworks = 'Foundation', 'CoreGraphics'
 s.source_files = 'commonLib/Classes/**/*.{h,c,m,swift}'
 s.resources = ['commonLib/Classes/**/*.{xib,nib,plist,storyboard}','commonLib/Assets/**/*.png']
 
-#s.dependency 'EMEasy'
-
+s.dependency 'AFNetworking'
+s.dependency 'JSONModel'
 
 end
