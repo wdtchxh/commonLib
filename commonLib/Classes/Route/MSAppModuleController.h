@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSModuleDefines.h"
 #import "MSAppSettings.h"
 #import "MSAppModule.h"
 

@@ -6,7 +6,12 @@
 //
 //
 
-#import "MSModuleDefines.h"
+#ifdef __cplusplus
+#define MS_MODULE_EXTERN		extern "C" __attribute__((visibility ("default")))
+#else
+#define MS_MODULE_EXTERN	        extern __attribute__((visibility ("default")))
+#endif /* __cplusplus */
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
