@@ -22,5 +22,7 @@ s.resources = ['commonLib/Classes/**/*.{xib,nib,plist,storyboard}','commonLib/As
 
 s.dependency 'AFNetworking'
 s.dependency 'JSONModel'
-
+s.dependency 'PINCache'
+s.dependency 'JLRoutes'
+s.dependency 'CocoaLumberjack'
 end

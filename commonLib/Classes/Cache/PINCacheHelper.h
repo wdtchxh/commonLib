@@ -10,4 +10,10 @@
 
 @interface PINCacheHelper : NSObject
 
+//+ (BOOL)isExtistCacheWithKey:(NSString *)key;
+
++ (id)cacheObjectForKey:(NSString *)key;
+
++ (void)setCacheObject:(id)obj forKey:(NSString *)key disk:(BOOL)disk;
+
 @end
