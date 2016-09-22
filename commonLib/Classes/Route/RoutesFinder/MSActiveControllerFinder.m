@@ -92,8 +92,7 @@ static MSActiveControllerFinder *finder = nil;
     
     UITabBarController *navigationController = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
     if ([navigationController isKindOfClass:[UINavigationController class]]) {
-        UINavigationController *navi = (UINavigationController *)tabBarController;
-        return navi;
+        return navigationController;
     }
     
     return nil;
