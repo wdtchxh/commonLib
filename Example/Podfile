@@ -6,7 +6,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'commonLib_Example', :exclusive => true do
 pod 'commonLib', :path => '../'
 
-    target 'commonLib_Tests' do
+target 'commonLib_Tests' do
     end
 end
-

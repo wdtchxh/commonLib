@@ -14,10 +14,23 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.0.0):
+    - CocoaLumberjack/Default (= 3.0.0)
+    - CocoaLumberjack/Extensions (= 3.0.0)
+  - CocoaLumberjack/Core (3.0.0)
+  - CocoaLumberjack/Default (3.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (3.0.0):
+    - CocoaLumberjack/Default
   - commonLib (0.1.0):
     - AFNetworking
+    - CocoaLumberjack
+    - JLRoutes
     - JSONModel
-  - JSONModel (1.2.0)
+    - PINCache
+  - JLRoutes (1.6.2)
+  - JSONModel (1.5.1)
+  - PINCache (2.3)
 
 DEPENDENCIES:
   - commonLib (from `../`)
@@ -28,7 +41,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  commonLib: c6a302dda8d21d8212fa5419230e9f9d64efb130
-  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  commonLib: e14129eb7860243a5c5430a087332d8b30bfa0fa
+  JLRoutes: 00671e008acb226b8b4c2385318dc1c583ef0dcf
+  JSONModel: fd2553dc9e6608a3f35bfc956a14be35395d3852
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
 
 COCOAPODS: 0.39.0
