@@ -88,16 +88,19 @@ static MSActiveControllerFinder *finder = nil;
             return navigationController;
         }
         return nil;
-    } else if ([tabBarController isKindOfClass:[UINavigationController class]]) {
+    }
+    
+    UITabBarController *navigationController = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    if ([navigationController isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navi = (UINavigationController *)tabBarController;
         return navi;
     }
+    
     return nil;
 }
 
 - (UIViewController *)defaultActiveTopController {
     return [[self defaultActiveNavigationController] topViewController];
-
 }
 
 
