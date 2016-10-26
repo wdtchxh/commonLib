@@ -81,6 +81,8 @@
 		921E68D4216E8BCC52AB680DE6593587 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5246658284AAC289CB21DEE800CFE468 /* JSONModel.m */; };
 		9258A7B71D4C13DBFC66C4B8BE43B79A /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 746DDF752375BDB616B9141DCBB4C2AA /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96BAEA58F5FA3F346C47FF599D08742A /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C25D543EEC6CDC337FA7ADE3EEF5FF1 /* JSONModel+networking.m */; };
+		9BC934FC1DC0A95A003103AC /* testObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC934FA1DC0A95A003103AC /* testObj.h */; };
+		9BC934FD1DC0A95A003103AC /* testObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC934FB1DC0A95A003103AC /* testObj.m */; };
 		9C37CD448198084D80EBDB80E8ABEF4A /* JLRoutes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEF8F669916914B3DB4411DE14C84A0 /* JLRoutes-dummy.m */; };
 		9DA766738FA46FCA9DCF6DDC7E640FD9 /* MSAppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CF17663F41EFBC08A236E6721E236A /* MSAppModule.m */; };
 		9DFB1378A337698012F7CE5D593DC04F /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = FB490AD81E1A7F230F93EEE7DA3C4799 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -356,6 +358,8 @@
 		992C8ACA6B1A48B15A18ECA3E565C5B8 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		9AE36FBB04841D6E7D453DF4E23C80C5 /* JSONModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONModel.xcconfig; sourceTree = "<group>"; };
 		9B7EA622C2FC03EB34C25F5E805288D0 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		9BC934FA1DC0A95A003103AC /* testObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testObj.h; sourceTree = "<group>"; };
+		9BC934FB1DC0A95A003103AC /* testObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testObj.m; sourceTree = "<group>"; };
 		9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A19DF616941A51576DD057A9FD8F4AD8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		A3031D6FAD8D1F8DD97D9AE9BFE28B73 /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
@@ -529,6 +533,8 @@
 				16087572FC707BCEE3B0C6FAED678BF7 /* Cache */,
 				26878BDA4F09D1A4F2AD6A89189922CA /* Network */,
 				262A48B69649F13771A25B92E0584D04 /* Route */,
+				9BC934FA1DC0A95A003103AC /* testObj.h */,
+				9BC934FB1DC0A95A003103AC /* testObj.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -987,6 +993,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD43C5224CF3A1F131FCE0EF1C42BFE /* JLRoutes+Finder.h in Headers */,
+				9BC934FC1DC0A95A003103AC /* testObj.h in Headers */,
 				4FB7E280EB692B7216A573A8274C0413 /* MSActiveControllerFinder.h in Headers */,
 				E5DC2CDF7CF74745EA13CE6D7336EFE2 /* MSAppModule.h in Headers */,
 				2EF64133B57A5415DE7E293196807AB1 /* MSAppModuleController.h in Headers */,
@@ -1255,6 +1262,7 @@
 				61DBACA1A2B354E39D0C359417DD8C3D /* UIViewController+Routes.m in Sources */,
 				FB82226FC724493123A325526E2C1A3D /* yhlSessionManager.m in Sources */,
 				F3BDB2104DA382EAAB0C75B5EF551977 /* yhlSessionTaskManager.m in Sources */,
+				9BC934FD1DC0A95A003103AC /* testObj.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
