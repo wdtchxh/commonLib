@@ -25,4 +25,6 @@ s.dependency 'JSONModel'
 s.dependency 'PINCache'
 s.dependency 'JLRoutes'
 s.dependency 'CocoaLumberjack'
+s.dependency 'SDWebImage'
+
 end

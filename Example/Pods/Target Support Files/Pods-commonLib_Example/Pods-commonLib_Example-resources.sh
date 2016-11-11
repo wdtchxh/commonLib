@@ -58,9 +58,11 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "../../commonLib/Classes/UIKit/CollectionModels/resource/MSImageCollectionViewCell.xib"
   install_resource "../../commonLib/Assets/image2.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "../../commonLib/Classes/UIKit/CollectionModels/resource/MSImageCollectionViewCell.xib"
   install_resource "../../commonLib/Assets/image2.png"
 fi
 
