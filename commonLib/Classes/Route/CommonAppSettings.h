@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MSAppSettings <NSObject>
+@protocol CommonAppSettings <NSObject>
 
 
 @end
 
 
-@interface MSAppSettings : NSObject <MSAppSettings>
+@interface CommonAppSettings : NSObject <CommonAppSettings>
 
 + (instancetype)appSettings;
 

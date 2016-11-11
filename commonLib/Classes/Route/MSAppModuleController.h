@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSAppSettings.h"
+#import "CommonAppSettings.h"
 #import "MSAppModule.h"
 
 MS_MODULE_EXTERN NSString *MSAppModuleSettingDidChangeNotification; //TODO: 设置

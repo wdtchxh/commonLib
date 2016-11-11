@@ -41,7 +41,7 @@ MSAppModuleController *appModuleManager;
     return appModuleManager;
 }
 
-+ (instancetype)appModuleControllerWithSettings:(id<MSAppSettings>)appSettings {
++ (instancetype)appModuleControllerWithSettings:(id<CommonAppSettings>)appSettings {
     [MSAppModuleController defaultAppModuleManager].appSettings = appSettings;
 
     return appModuleManager;

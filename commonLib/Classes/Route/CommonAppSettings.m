@@ -6,12 +6,12 @@
 //  Copyright © 2015年 flora. All rights reserved.
 //
 
-#import "MSAppSettings.h"
+#import "CommonAppSettings.h"
 
-@implementation MSAppSettings
+@implementation CommonAppSettings
 
 + (instancetype)appSettings {
-    static MSAppSettings *settings = nil;
+    static CommonAppSettings *settings = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         settings = [[self alloc] init];
