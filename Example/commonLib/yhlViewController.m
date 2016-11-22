@@ -7,7 +7,7 @@
 //
 
 #import "yhlViewController.h"
-
+//#import "MSCoreFileManager.h"
 @interface yhlViewController ()
 
 @end
@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    
+   //NSString *path = MSPathForBundleResource([NSBundle mainBundle], @"");
     self.view.backgroundColor=[UIColor redColor];
 }
 

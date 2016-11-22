@@ -15,7 +15,7 @@ MS_MODULE_EXTERN NSString *MSAppModuleSettingDidChangeNotification; //TODO: шо╛ч
 @class MSAppModuleController;
 @class MSAppModule;
 @protocol MSAppModule;
-@protocol MSAppSettings;
+@protocol CommonAppSettings;
 
 MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
 
@@ -27,9 +27,9 @@ MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
     NSMutableDictionary *_externalUrlSchemeDict;
 }
 
-@property (nonatomic, strong, readonly) id<MSAppSettings> appSettings;
+@property (nonatomic, strong, readonly) id<CommonAppSettings> appSettings;
 
-+ (instancetype)appModuleControllerWithSettings:(id<MSAppSettings>)appSettings;
++ (instancetype)appModuleControllerWithSettings:(id<CommonAppSettings>)appSettings;
 
 - (id<MSAppModule>)appModuleWithModuleName:(NSString *)moduleName;
 - (id<MSAppModule>)appModuleWithModuleClass:(Class)moduleClass;

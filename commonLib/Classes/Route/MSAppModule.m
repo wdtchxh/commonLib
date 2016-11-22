@@ -13,7 +13,7 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
 
 @interface MSAppModule ()
 
-@property(readwrite, nonatomic, strong) id <MSAppSettings> moduleSettings;
+@property(readwrite, nonatomic, strong) id <CommonAppSettings> moduleSettings;
 
 @end
 
@@ -39,11 +39,11 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
     return @"1.0";
 }
 
-- (void)moduleDidLoad:(id<MSAppSettings>)info {
+- (void)moduleDidLoad:(id<CommonAppSettings>)info {
     self.moduleSettings = info;
 }
 
-- (void)moduleDidUnload:(id<MSAppSettings>)info {
+- (void)moduleDidUnload:(id<CommonAppSettings>)info {
     self.moduleSettings = nil;
 }
 

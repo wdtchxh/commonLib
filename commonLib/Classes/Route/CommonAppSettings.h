@@ -1,5 +1,5 @@
 //
-//  MSAppSettings.h
+//  CommonAppSettings
 //  EMStock
 //
 //  Created by ryan on 15/11/5.

@@ -23,7 +23,7 @@ MSAppModuleController *appModuleManager;
 @interface MSAppModuleController ()
 
 @property (nonatomic, strong) JLRoutes *routes;
-@property (nonatomic, strong, readwrite) id<MSAppSettings> appSettings;
+@property (nonatomic, strong, readwrite) id<CommonAppSettings> appSettings;
 
 @end
 

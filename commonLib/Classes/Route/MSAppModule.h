@@ -14,10 +14,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "CommonAppSettings.h"
 MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 
-@protocol MSAppSettings;
+@protocol CommonAppSettings;
 @class JLRoutes;
 
 @protocol MSAppModule <NSObject>
@@ -26,7 +26,7 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 @property(readonly, nonatomic) NSString *moduleName;
 @property(readonly, nonatomic) NSString *moduleVersion;
 @property(readonly, nonatomic) NSString *moduleId;
-@property(readonly, nonatomic, strong) id <MSAppSettings> moduleSettings;
+@property(readonly, nonatomic, strong) id <CommonAppSettings> moduleSettings;
 
 @optional
 
@@ -39,8 +39,8 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 @property(readonly, nonatomic) NSArray *supportedURLSchemes; //TODO
 
 /* 模块加载与卸载时候会调用 */
-- (void)moduleDidLoad:(id<MSAppSettings>)info;
-- (void)moduleDidUnload:(id<MSAppSettings>)info;
+- (void)moduleDidLoad:(id<CommonAppSettings>)info;
+- (void)moduleDidUnload:(id<CommonAppSettings>)info;
 
 
 /* 注册Routes */
