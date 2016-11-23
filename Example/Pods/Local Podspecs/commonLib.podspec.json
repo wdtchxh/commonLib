@@ -25,9 +25,10 @@
   ],
   "source_files": "commonLib/Classes/**/*.{h,c,m,swift}",
   "resources": [
-    "commonLib/Classes/**/*.{xib,nib,plist,storyboard}",
+    "commonLib/Classes/**/*.{xib,nib,plist,storyboard,ttf}",
     "commonLib/Assets/**/*.png"
   ],
+  "public_header_files": "EMSpeed/UIKit/FontAwesome+iOS/**/*.h",
   "dependencies": {
     "AFNetworking": [
 

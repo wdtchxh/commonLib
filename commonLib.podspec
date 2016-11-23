@@ -18,7 +18,8 @@ s.platform     = :ios, '7.0'
 s.requires_arc = true
 s.frameworks = 'Foundation', 'CoreGraphics'
 s.source_files = 'commonLib/Classes/**/*.{h,c,m,swift}'
-s.resources = ['commonLib/Classes/**/*.{xib,nib,plist,storyboard}','commonLib/Assets/**/*.png']
+s.resources = ['commonLib/Classes/**/*.{xib,nib,plist,storyboard,ttf}','commonLib/Assets/**/*.png']
+s.public_header_files   = "EMSpeed/UIKit/FontAwesome+iOS/**/*.h"
 
 s.dependency 'AFNetworking'
 s.dependency 'JSONModel'
