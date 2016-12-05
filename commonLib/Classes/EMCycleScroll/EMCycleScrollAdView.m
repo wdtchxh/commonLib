@@ -9,8 +9,8 @@
 static const CGFloat kDefaultAutoScrollTimeInterval = 5.0;  //默认轮播时间
 
 #import "EMCycleScrollAdView.h"
-#import <EMSpeed/CollectionModels.h>
-#import <EMSpeed/NSTimer+Pause.h>
+#import "CollectionModels.h"
+#import "NSTimer+Pause.h"
 
 @interface EMCycleScrollAdView()<MSHorizontalCollectionViewDelegate>
 {

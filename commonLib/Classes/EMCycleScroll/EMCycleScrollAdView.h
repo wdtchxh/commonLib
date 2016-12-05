@@ -6,7 +6,7 @@
 //
 //
 
-#import <EMSpeed/MSHorizontalCollectionView.h>
+#import "MSHorizontalCollectionView.h"
 
 @class EMCycleScrollAdView;
 

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <EMSpeed/MSCollectionCellUpdating.h>
+#import "MSCollectionCellUpdating.h"
 
 @interface EMCycleCollectionViewCell : UICollectionViewCell<MSCollectionCellUpdating>
 

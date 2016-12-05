@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <EMSpeed/MSCollectionCellModel.h>
+#import "MSCollectionCellModel.h"
 
 @interface EMCycleItem : NSObject<MSCollectionCellModel>
 

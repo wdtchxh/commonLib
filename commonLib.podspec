@@ -20,6 +20,7 @@ s.frameworks = 'Foundation', 'CoreGraphics'
 s.source_files = 'commonLib/Classes/**/*.{h,c,m,swift}'
 s.resources = ['commonLib/Classes/**/*.{xib,nib,plist,storyboard,ttf}','commonLib/Assets/**/*.png']
 s.public_header_files   = "EMSpeed/UIKit/FontAwesome+iOS/**/*.h"
+#s.vendored_frameworks = 'commonLib/Classes/**/WSPX.framework'
 
 s.dependency 'AFNetworking'
 s.dependency 'JSONModel'
