@@ -1,13 +1,18 @@
 //
 //  MSContainerViewController.m
-//  Pods
+//  YMInfo
 //
-//  Created by flora on 16/4/13.
+//  Created by yangshiyu on 2017/2/8.
+//  Copyright © 2017年 272789124@qq.com. All rights reserved.
 //
 //
 
 #import "MSContainerViewController.h"
-#import <MSUIKitCore.h>
+//#import <MSUIKitCore.h>
+float MSOSVersion(void)
+{
+    return [[UIDevice currentDevice].systemVersion floatValue];
+}
 
 @interface MSContainerViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -117,8 +122,12 @@ static NSString *CellID = @"ControllerCell";
     
     _navigationView.frame = CGRectMake(0, 0, width, 35);
     
-    self.flowLayout.itemSize = CGSizeMake(width, height - _navigationView.frame.size.height);
-    self.collectionView.frame = CGRectMake(0, _navigationView.frame.size.height, width, height - _navigationView.frame.size.height);
+//    self.flowLayout.itemSize = CGSizeMake(width, height - _navigationView.frame.size.height);
+//    self.collectionView.frame = CGRectMake(0, _navigationView.frame.size.height, width, height - _navigationView.frame.size.height);
+    
+    self.flowLayout.itemSize = CGSizeMake(width, height);
+    self.collectionView.frame = CGRectMake(0, 0, width, height);
+    
 }
 
 - (void)viewDidLoad

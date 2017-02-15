@@ -1,11 +1,10 @@
 //
 //  WSNavigationView.m
-//  网易新闻
+//  YMInfo
 //
-//  Created by WackoSix on 15/12/27.
-//  Copyright © 2015年 WackoSix. All rights reserved.
+//  Created by yangshiyu on 2017/2/8.
+//  Copyright © 2017年 272789124@qq.com. All rights reserved.
 //
-
 #import "MSNavigationView.h"
 #define kItemW 70
 #define kMargin 10
@@ -56,9 +55,8 @@
         self.selectedItem.titleLabel.font = [UIFont systemFontOfSize:16];
     }];
     
-    //判断位置
-    CGFloat offsetX = sender.center.x - self.center.x;
-    
+    //判断位置  这个判断受self所在父元素的位置影响
+    CGFloat offsetX = sender.center.x+self.frame.origin.x - self.center.x;
     if (offsetX < 0){
         
         self.contentOffset = CGPointMake(0, 0);
@@ -125,9 +123,10 @@
         
         UIButton *item = self.btns[i];
         [item sizeToFit];
-        CGFloat width = item.frame.size.width + 2 * kMargin;
+        CGFloat width = (_scrollView.frame.size.width-2*kMargin)*0.2;// item.frame.size.width + 2 * kMargin;
         width = MAX(width, itemMinWidth);
         item.frame = CGRectMake(itemX, 0, width, itemHeight);
+        //item.backgroundColor=[UIColor whiteColor];
         itemX += item.frame.size.width;
     }
     

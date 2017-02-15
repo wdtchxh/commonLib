@@ -1,15 +1,16 @@
 //
 //  MSContainerViewController.h
-//  Pods
+//  YMInfo
 //
-//  Created by flora on 16/4/13.
+//  Created by yangshiyu on 2017/2/8.
+//  Copyright © 2017年 272789124@qq.com. All rights reserved.
 //
 //一个带有menu支持点击切换，左右滑动切换controller的容器类
 
-#import <MSViewController.h>
+#import <UIKit/UIKit.h>
 #import "MSNavigationView.h"
 
-@interface MSContainerViewController : MSViewController
+@interface MSContainerViewController : UIViewController
 {
     UIView<MSNavigatorView> *_navigationView;
 }

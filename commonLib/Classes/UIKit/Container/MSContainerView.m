@@ -1,9 +1,9 @@
 //
 //  MSContainerView.m
-//  NetEaseNews
+//  YMInfo
 //
-//  Created by flora on 16/3/18.
-//  Copyright © 2016年 WackoSix. All rights reserved.
+//  Created by yangshiyu on 2017/2/8.
+//  Copyright © 2017年 272789124@qq.com. All rights reserved.
 //
 
 #import "MSContainerView.h"

@@ -1,9 +1,9 @@
 //
 //  WSNavigationView.h
-//  网易新闻
+//  YMInfo
 //
-//  Created by WackoSix on 15/12/27.
-//  Copyright © 2015年 WackoSix. All rights reserved.
+//  Created by yangshiyu on 2017/2/8.
+//  Copyright © 2017年 272789124@qq.com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

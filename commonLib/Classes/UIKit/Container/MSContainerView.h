@@ -1,9 +1,10 @@
 //
 //  MSContainerView.h
-//  NetEaseNews
+//  YMInfo
 //
-//  Created by flora on 16/3/18.
-//  Copyright © 2016年 WackoSix. All rights reserved.
+//  Created by yangshiyu on 2017/2/8.
+//  Copyright © 2017年 272789124@qq.com. All rights reserved.
+//
 //管理多个controller 左右滚动，自带可滚动的menu可用于切换菜单
 
 #import <UIKit/UIKit.h>
