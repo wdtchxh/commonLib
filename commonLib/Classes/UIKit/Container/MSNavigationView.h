@@ -21,6 +21,7 @@ typedef void (^itemClick)(NSInteger selectedIndex);
 @property (strong, nonatomic) NSArray *items;
 @property (nonatomic, strong) UIColor *normalTextColor;
 @property (nonatomic, strong) UIColor *selectedTextColor;
+@property (nonatomic, strong) UIColor *borderColor;
 @property (strong, nonatomic) NSMutableArray *btns;
 
 + (instancetype)navigationViewWithItems:(NSArray<NSString *> *)items itemClick:(itemClick)itemClick;
