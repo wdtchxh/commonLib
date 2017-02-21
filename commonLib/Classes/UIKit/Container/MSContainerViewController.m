@@ -267,5 +267,9 @@ static NSString *CellID = @"ControllerCell";
     NSLog(@"ContainerViewController didSelectControllerAtIndex %zd",index);
 }
 
+-(void) reLoadDataSources{
+    [self.collectionView reloadData];
+}
+
 @end
 

@@ -31,4 +31,6 @@
 
 - (void)didSelectControllerAtIndex:(NSInteger)index;
 
+-(void) reLoadDataSources;
+
 @end

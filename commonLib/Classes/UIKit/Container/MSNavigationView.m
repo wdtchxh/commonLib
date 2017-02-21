@@ -160,8 +160,12 @@
 - (void)setItems:(NSArray<NSString *> *)items{
     
     _items = items;
-    
-    //创建按钮
+    //清空老数据
+    for (UIButton *btn in self.btns) {
+        [btn removeFromSuperview];
+    }
+    [self.btns removeAllObjects];
+    //重新创建按钮
     for (NSInteger i=0; i<items.count; i++) {
         
         UIButton *item = [[UIButton alloc] init];
@@ -176,6 +180,7 @@
         [_scrollView addSubview:item];
         item.tag = i;
     }
+    [self setNeedsLayout];
 }
 
 - (void)setFrame:(CGRect)frame{
